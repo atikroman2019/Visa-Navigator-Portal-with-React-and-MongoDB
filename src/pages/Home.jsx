@@ -1,7 +1,17 @@
-export default function Home() {
+import Banner from "../components/Banner";
+import HowItWorks from "../components/HowItWorks";
+import LatestVisas from "../components/LatestVisas";
+import WhyChooseUs from "../components/WhyChooseUs";
+
+const Home = () => {
   return (
-    <div className="p-10 text-2xl font-semibold">
-      Home Page Working ✅
+    <div>
+      <Banner></Banner>
+      <LatestVisas></LatestVisas>
+      <WhyChooseUs></WhyChooseUs>
+      <HowItWorks></HowItWorks>
     </div>
   );
-}
+};
+
+export default Home;
